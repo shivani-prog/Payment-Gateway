@@ -6,7 +6,7 @@ In this repository  contains all the code for creating a simple but effective Pa
 You'll Learn Basics of HTML/CSS and JavaScript with that you will also be able to us JQuery
 
 # Files
-Paymentgateaway floder consisting all the codes and images 
+All the files consisting all the codes and images 
 # About Me
 Hi, I am Shivani Saha 3rd year IT Student from Terna Engineering College , Currently I am a Intern under Spark Foundation, This repository consist of Task-3 (Payment Gateaway) 
 

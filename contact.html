@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+	<script>
+		function sendEmail() 
+		{
+			var a= document.getElementById("to_mail");
+			Email.send({
+			Host: "smtp.gmail.com",
+      Username : "sparkfoundation1001@gmail.com",
+      Password : "cskanlziddwrzfrv",		
+			To : a.value,
+			From : "sparkfoundation1001@gmail.com",
+			Subject : "Donation ",
+			Body : " Thank you for your generous gift to The Spark Foundation. We are thrilled to have your support. Through your donation we have been able to buy the basic need of poor children in their education and continue working towards Spreading Education to every corner of India in hopes to making our nation to prosper more in further future. You truly make the difference for us, and we are extremely grateful!",})
+	
+      .then(
+				message => {
+				if (message=='OK'){
+					alert('sent. Thank you!!');
+          validation();
+				}
+				else{
+					console.error(message);
+					alert(message)
+				}
+      
+			}
+			)
+      
+      
+    }
+    </script>
+  <ul>
+    <script src="script.js"></script>
+    
+    <h1 div class="head">Spark Foundation
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#info" id ="button" class='button'>Donate</a></li>
+    <li ><a  href="About.html">About</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul></h1>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<body>
+  <div class="contact-info">
+    <div class="contact-modal">
+<center>
+  <br>
+  <br>
+  <br>
+    <h1>Contact Number:-</h1>
+    <br>
+    <h1>+91-XXXXX-XXXXX</h1>
+    <br>
+    <h1>Email Id:-</h1>
+    <br>
+    <h1>sparkfoundation1001@gmail.com</h1>
+</center></div></div>
+<script src="script.js"></script>
+<footer>
+ <hr width="100%">
+ ©2021 The Sparks Foundation. All Rights Reserved
+ <center>
+
+ <a href="https://www.linkedin.com/company/the-sparks-foundation/"><img src="lkdin.png" width="20px" height="20px"></a>
+ <a href="https://www.facebook.com/thesparksfoundation.info"><img src="fb.jpg" width="20px" height="20px"></a>
+ <a href="https://twitter.com/tsfsingapore"><img src="twit.png" width="20px" height="20px"></a>
+ <a href="https://www.instagram.com/thesparksfoundation.info/"><img src="insta.png" width="20px" height="20px"></a>
+ </center>
+
+</footer>
+
+
+
+ <!-- ------------------------------------------------------AMOUNT POP UPBOX--------------------------------------------------------------      -->
+ <div class="info"> 
+   <h4 class="test">Testing</h4>
+      <div class="modal">
+    
+        <div class= "close">+</div>
+        <script>
+
+            document.querySelector('.close').addEventListener('click',
+            function(){
+                document.querySelector('.info').style.display='none';
+            });
+        </script>
+        <center>
+        <h1><b>Payment</b>
+          <div class="form">
+        <img src="visa.png" width="40px" height="40px" div class="pic" >
+        <a href="wallet.html"><button div class="btn-png"><img src="wallet.png" width="40px" height="40px"></button></a>
+        <a href="https://www.paypal.com/in/home"><button div class="btn-png"><img src="paypal.png" width="40px" height="40px" ></ton></h1></a>
+        
+      <form method="post">
+        <p>Enter valid Email-Id:
+        <input type="email" placeholder="E-mail Address" required id="to_mail"></p>
+        <p>Enter Mobile No.:
+        <input type="tel" placeholder="Mobile Number" required id="mno"></p>
+        <p>Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other</p>
+        <p>Enter Card Holder Name:
+          <input type="text" class="input" placeholde="Name">
+          <i class="fas fa-user"></i></p>
+        <p>Enter Account number:<input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+          <i class="far fa-credit-card"></i></p>
+        <p> Expiration Date:
+          <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00"></p>
+          <i class="far fa-calendar-alt"></i>
+        <p>CV Code:
+          <input type="password" class="input" data-mask="000" placeholder="000">
+          <i class="fas fa-lock "></i></p>
+        <p>Enter Amount ₹<input type="text" placeholder="Amount" required id="pass"></p>
+            <input type="button" value="Pay" onclick="sendEmail()"  onclick="validation()" id="proceed" /> 
+        
+        </center>
+        </div>
+        </form>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        
+        
+
+        
+        
+   
+    </div>
+    </div>
+
+<!-------------------------------------------------------------END OF POP UP BOX------------------------------------------------------------ -->
+
+</body>
+
+</html>
